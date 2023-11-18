@@ -1,0 +1,18 @@
+{
+  "name": "navigatecy2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test2":"cypress open",
+    "test": "npx cypress run --env allure=true --browser electron",
+    "allureReport": "allure generate allure-results --clean -o allure-report",
+    "openAll": "allure open"
+  },
+  "author": "Johan Ruiz",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "cypress": "^13.5.1"
+  }
+}
